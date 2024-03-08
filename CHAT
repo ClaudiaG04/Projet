@@ -1,1 +1,26 @@
+# Étape 1: Choix du Langage et Framework
+
+# 1. Installer Flask :
+# Assurez-vous que vous avez Python installé. Ensuite, installez Flask :
+# pip install Flask
+
+# 2. Créer le Fichier Python :
+# Créez un fichier Python (par exemple, serveur.py) pour votre application côté serveur.
+
+# 3. Importation de Flask :
+# Importez Flask dans votre fichier Python et initialisez l'application.
+from flask import Flask
+
+app = Flask(__name__)
+
+# 4. Route de Test :
+# Ajoutez une route de test pour vous assurer que le serveur fonctionne correctement.
+@app.route('/')
+def index():
+    return "Serveur en cours d'exécution avec succès !"
+
+# 5. Exécution du Serveur :
+# Ajoutez le code pour exécuter le serveur lorsqu'on lance le script Python.
+if __name__ == '__main__':
+    app.run(debug=True)
 
